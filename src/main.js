@@ -28,8 +28,8 @@ form.addEventListener("submit", event => {
   showLoader();
 
   getImagesByQuery(query)
-    .then(response => {
-      const images = response.data.hits;
+    .then(data => {
+      const images = data.hits;
 
       if (images.length === 0) {
         iziToast.info({
