@@ -16,3 +16,28 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+
+.hidden {
+  display: none;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #ccc;
+  border-bottom-color: #4e75ff;
+  border-radius: 50%;
+  animation: rotation 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
